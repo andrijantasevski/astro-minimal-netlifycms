@@ -1,0 +1,31 @@
+{
+  "name": "astro-minimal-netlifycms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrijantasevski/astro-minimal-netlifycms.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrijantasevski/astro-minimal-netlifycms/issues"
+  },
+  "homepage": "https://github.com/andrijantasevski/astro-minimal-netlifycms#readme",
+  "dependencies": {
+    "astro": "^1.0.0-rc.7"
+  },
+  "devDependencies": {
+    "@astrojs/tailwind": "^0.2.4",
+    "@tailwindcss/forms": "^0.5.2",
+    "sass": "^1.53.0"
+  }
+}
