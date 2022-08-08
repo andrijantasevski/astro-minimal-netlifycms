@@ -9,12 +9,13 @@ public_folder: "/images/uploads" # We do not need to specify the /public part as
 site_url: https://astronetlifycms.andrijan.xyz
 display_url: https://astronetlifycms.andrijan.xyz
 
+slug: { { slug } } # The URL should be the name of the title of the post/document
+
 collections:
   - label: Posts # Label  used in the UI for the collection
     name: posts # Name of the collection used for various functionality in the CMS
     folder: /src/pages # Where each new post with .md should be saved
     create: true # Allows users to create new items in the collection
-    slug: { { slug } } # The URL should be the name of the title of the post/document
     fields:
       - { label: "Title", name: "title", widget: "string" } # Field Title
       - { label: "Description", name: "description", widget: "markdown" } # Field Description
