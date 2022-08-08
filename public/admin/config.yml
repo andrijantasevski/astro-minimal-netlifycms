@@ -1,18 +1,21 @@
 backend: # The two following lines need to be indented
   name: git-gateway # The authentication method we use for Netlify CMS
-  branch: main # Branch to update when we push our content (it can be any branch in our repo)
+  branch: 1-connect-netlifycms-to-astro-repo # Branch to update when we push our content (it can be any branch in our repo)
 
 # Do not indent these lines
 media_folder: "public/images/uploads" # Exact path where we store the uploaded media
 public_folder: "/images/uploads" # We do not need to specify the /public part as all the files from it are stored in the root directory after the build step
 
-site_url: https://astronetlifycms.andrijan.xyz
-display_url: https://astronetlifycms.andrijan.xyz
+site_url: https://astronetlifycms.andrijan.xyz # Replace with site's URL
+display_url: https://astronetlifycms.andrijan.xyz # Replace with site's URL
+
+logo_url: /images/logo/logo.png # Replace with path to logo
 
 slug: { { slug } } # The URL should be the name of the title of the post/document
 
 collections:
-  - label: Posts # Label  used in the UI for the collection
+  - label: posts # Label used in the UI for the collection
+    label_singular: post # Label for singular post
     name: posts # Name of the collection used for various functionality in the CMS
     folder: /src/pages # Where each new post with .md should be saved
     create: true # Allows users to create new items in the collection
