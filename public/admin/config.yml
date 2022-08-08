@@ -22,5 +22,5 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" } # Field Title
       - { label: "Description", name: "description", widget: "markdown" } # Field Description
-      - { label: "Date of writing", name: "date", widget: "DateTime" } # Field Date of writing
+      - { label: "Date of writing", name: "date", widget: "datetime" } # Field Date of writing
       - { label: "Featured image", name: "featuredImage", widget: "image" } # Field Featured Image
